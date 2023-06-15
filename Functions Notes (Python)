@@ -21,3 +21,12 @@ def by_three(number):
     return cube(number)
   else:
     return False
+
+IMPORTING LIBRARIES
+#just imports the math library so python can print the square root of 25
+import math
+print math.sqrt(25)
+
+#(from module import function) this is an easier way to do it if we just want to use sqrt and dont want to type math.sqrt
+from math import sqrt
+print sqrt(25)
