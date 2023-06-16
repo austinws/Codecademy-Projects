@@ -30,3 +30,13 @@ print math.sqrt(25)
 #(from module import function) this is an easier way to do it if we just want to use sqrt and dont want to type math.sqrt
 from math import sqrt
 print sqrt(25)
+
+ANOTHER THING I GOT RIGHT THE FIRST TIME
+
+def shut_down(s):
+  if s == "yes":
+    return "Shutting down"
+  elif s == "no":
+    return "Shutdown aborted"
+  else:
+    return "Sorry"
