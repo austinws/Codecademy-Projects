@@ -68,3 +68,43 @@ def trip_cost (city, days, spending_money):
   return rental_car_cost(days) + hotel_cost(days - 1) + plane_ride_cost(city) + spending_money
 
 print trip_cost("Los Angeles", 5, 600)
+
+LIST PROBLEM I HAD TROUBLE WITH 
+
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+# Your code here!
+for number in start_list:
+  square_list.append(number**2)
+square_list.sort()
+
+
+print square_list
+
+#I had trouble with this one because "number" wasn't defined at all in the instructions. I think codecademy could have done a better job explaining the problem with the example they gave. 
+
+
+FINAL LIST PROBLEM THAT I GOT RIGHT THE FIRST TIME
+
+inventory = {
+  'gold' : 500,
+  'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+
+inventory['pocket'] = ['seashell', 'strange berry', 'lint']
+
+inventory['backpack'].sort()
+
+inventory['backpack'].remove('dagger')
+
+inventory['gold'] += 50
+
+print inventory
