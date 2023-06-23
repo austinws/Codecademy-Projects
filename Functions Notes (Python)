@@ -108,3 +108,55 @@ inventory['backpack'].remove('dagger')
 inventory['gold'] += 50
 
 print inventory
+
+MAKING A PURCHASE PROBLEM. IM JUST PUTTING MY CODE HERE TO SAVE BECAUSE IT IS TUMPING ME AND IM ABOUT TO REPLACE IT WITH THE SOLUTION I CANT EVEN SEE
+
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+  "banana": 6,
+  "apple": 0,
+  "orange": 32,
+  "pear": 15
+}
+    
+prices = {
+  "banana": 4,
+  "apple": 2,
+  "orange": 1.5,
+  "pear": 3
+}
+
+#MY CODE
+def compute_bill(food):
+  total = 0 
+  for food in prices:
+    total += prices[food]
+  return total
+
+#CORRECT CODE
+def compute_bill(food):
+  total = 0
+  for item in food:
+    total = total + prices[item]
+  return total
+
+#Next lesson code of mine            #Okay so mine was actually really damn close but I messed up the <= thing and didnt need the else statement
+def compute_bill(food):
+  total = 0
+  for item in food:
+    if stock[item] <= 0:
+      total = total + prices[item]
+      stock[item] -= 1
+    else:
+  return total
+
+#Next lesson correct code
+def compute_bill(food):
+  total = 0
+  for item in food:
+    if stock[item] > 0:
+      total += prices[item]
+      stock[item] -= 1
+  return total
+
